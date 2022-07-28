@@ -1,0 +1,35 @@
+/*Página conoceme - parte de main */
+
+main{
+    color: $color-secundario;
+    .titulo-me{
+        display: flex;
+        justify-content: center;
+        color: rgb(28, 54, 46);
+        font-size: 2rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+    .main-parrafo3{
+        color: rgb(16, 63, 16);
+        font-size: 1.2rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin:3rem;
+        text-align: center;
+    }
+    .main-instagram {
+        text-align: right;
+        margin: 2rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: pink;
+        font-family:cursive;
+    }
+    a img {
+        width: 8%;
+        display: inline-block;
+        text-align: end;
+    }
+}
+

@@ -1,0 +1,110 @@
+/*Propiedades de la página index.html y en general*/  
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+cuerpo{
+    background-color: $color-principal;
+    header{
+        div h1 div {
+            color: rgb(49, 7, 49);
+            font-family: 'Stick No Bills', sans-serif;
+            font-size: 4rem;
+        }
+
+        .fondo-nav{
+            background-color: #0a0e0b;
+        }
+
+        a:link{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        
+        a:visited{
+            color: black;
+            margin: 0rem;
+            padding: 0.5rem;
+        }
+        
+    }
+      /*css del main con Grid */
+    main{
+        background-color: $color-secundario;
+        .titulo-main {
+
+            font-size: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-style: normal;
+            grid-area: titulo-main;
+        }
+
+          /*animación*/
+
+        .titulo-main:hover {
+            color: #640b7a;
+            font-weight: bold;
+          }
+        
+        .parrafos-main{
+            margin: 1.5rem;
+            display: grid;
+            grid-template-areas: "parrafo-uno-main parrafo-dos-main";
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.3rem;
+        }
+        .img-index{
+            display: grid;
+            grid-template-areas:"main-img1 main-img2"
+                                "main-img3 main-img4"; 
+            margin:1rem;   
+            justify-content: center;   
+            align-items: center;
+        }
+        
+        .main-img1{
+            width: 70%;
+            align-items: center;
+            grid-area: main-img1;
+            margin: 1rem;
+        }
+        
+        .main-img2{
+            width: 70%;
+            align-items: center;
+            grid-area: main-img2;
+            margin: 1rem;
+        }
+        
+        .main-img3{
+            width: 70%;
+            align-items: center;
+            grid-area: main-img3;
+            margin: 1rem;
+        }
+        
+        .main-img4{
+            width: 100%;
+            align-items: center;
+            grid-area: main-img4;
+            margin: 1rem;
+        }
+
+    }
+
+    footer{
+        color: aliceblue;
+        background-color: $color-footer;
+        padding: 1rem;
+        text-align: right;
+        font-weight: bold;
+    }
+}

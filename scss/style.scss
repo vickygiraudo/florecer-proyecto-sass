@@ -1,0 +1,13 @@
+//variables 
+$color-principal: whitesmoke;
+$color-secundario: rgb(218, 196, 171);
+$color-footer: #d655ce;
+
+//import variables 
+@import "utilities/variables";
+//import páginas
+@import "utilities/conoceme";
+@import "utilities/contactos";
+@import "utilities/comunidad";
+@import "utilities/index";
+

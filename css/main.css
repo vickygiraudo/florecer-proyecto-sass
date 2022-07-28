@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*Propiedades de la página index.html y en general*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; }
+  
+  cuerpo {
+    background-color: whitesmoke;
+    /*css del main con Grid */ }
+    cuerpo header div h1 div {
+      color: #310731;
+      font-family: 'Stick No Bills', sans-serif;
+      font-size: 4rem; }
+    cuerpo header .fondo-nav {
+      background-color: #0a0e0b; }
+    cuerpo header a:link {
+      color: black;
+      text-decoration: none;
+      font-weight: bold; }
+    cuerpo header a:visited {
+      color: black;
+      margin: 0rem;
+      padding: 0.5rem; }
+    cuerpo main {
+      background-color: #dac4ab;
+      /*animación*/ }
+      cuerpo main .titulo-main {
+        font-size: 2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        text-align: center;
+        font-style: normal;
+        grid-area: titulo-main; }
+      cuerpo main .titulo-main:hover {
+        color: #640b7a;
+        font-weight: bold; }
+      cuerpo main .parrafos-main {
+        margin: 1.5rem;
+        display: grid;
+        grid-template-areas: "parrafo-uno-main parrafo-dos-main";
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.3rem; }
+      cuerpo main .img-index {
+        display: grid;
+        grid-template-areas: "main-img1 main-img2"
+   "main-img3 main-img4";
+        margin: 1rem;
+        justify-content: center;
+        align-items: center; }
+      cuerpo main .main-img1 {
+        width: 70%;
+        align-items: center;
+        grid-area: main-img1;
+        margin: 1rem; }
+      cuerpo main .main-img2 {
+        width: 70%;
+        align-items: center;
+        grid-area: main-img2;
+        margin: 1rem; }
+      cuerpo main .main-img3 {
+        width: 70%;
+        align-items: center;
+        grid-area: main-img3;
+        margin: 1rem; }
+      cuerpo main .main-img4 {
+        width: 100%;
+        align-items: center;
+        grid-area: main-img4;
+        margin: 1rem; }
+    cuerpo footer {
+      color: aliceblue;
+      background-color: #d655ce;
+      padding: 1rem;
+      text-align: right;
+      font-weight: bold; }
+  
+/*Página conoceme - parte de main */
+main {
+  color: #dac4ab; }
+  main .titulo-me {
+    display: flex;
+    justify-content: center;
+    color: #1c362e;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1.5rem;
+    padding: 1.5rem; }
+  main .main-parrafo3 {
+    color: #103f10;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3rem;
+    text-align: center; }
+  main .main-instagram {
+    text-align: right;
+    margin: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: pink;
+    font-family: cursive; }
+  main a img {
+    width: 8%;
+    display: inline-block;
+    text-align: end; }
+
+/*Página Contactos - parte de main */
+main {
+  color: color-secundario; }
+  main form legend {
+    display: flex;
+    justify-content: center;
+    color: #1b0606;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 1rem 1.5rem 1rem;
+    padding: 2rem; }
+  main form div {
+    display: flex;
+    justify-content: center;
+    color: #111425;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    width: bold;
+    margin: 1rem;
+    padding: 1rem; }
+  main .botones {
+    padding: 1rem;
+    margin: 1rem; }
+  main .botones2 {
+    padding: 1rem;
+    margin: 1rem; }
+
+/*Propiedades de página Comunidad Ecofriendly*/
+main {
+  background-color: whitesmoke; }
+  main .titulo-main-eco {
+    color: #2e2e42;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2rem; }
+  main .video-main {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    text-align: center; }
+
