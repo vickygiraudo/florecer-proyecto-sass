@@ -1,85 +1,7 @@
 @charset "UTF-8";
-
-/*Propiedades de la página index.html y en general*/
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box; }
-  
-  cuerpo {
-    background-color: whitesmoke;
-    /*css del main con Grid */ }
-    cuerpo header div h1 div {
-      color: #310731;
-      font-family: 'Stick No Bills', sans-serif;
-      font-size: 4rem; }
-    cuerpo header .fondo-nav {
-      background-color: #0a0e0b; }
-    cuerpo header a:link {
-      color: black;
-      text-decoration: none;
-      font-weight: bold; }
-    cuerpo header a:visited {
-      color: black;
-      margin: 0rem;
-      padding: 0.5rem; }
-    cuerpo main {
-      background-color: #dac4ab;
-      /*animación*/ }
-      cuerpo main .titulo-main {
-        font-size: 2rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding: 1.5rem;
-        margin-top: 2rem;
-        text-align: center;
-        font-style: normal;
-        grid-area: titulo-main; }
-      cuerpo main .titulo-main:hover {
-        color: #640b7a;
-        font-weight: bold; }
-      cuerpo main .parrafos-main {
-        margin: 1.5rem;
-        display: grid;
-        grid-template-areas: "parrafo-uno-main parrafo-dos-main";
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.3rem; }
-      cuerpo main .img-index {
-        display: grid;
-        grid-template-areas: "main-img1 main-img2"
-   "main-img3 main-img4";
-        margin: 1rem;
-        justify-content: center;
-        align-items: center; }
-      cuerpo main .main-img1 {
-        width: 70%;
-        align-items: center;
-        grid-area: main-img1;
-        margin: 1rem; }
-      cuerpo main .main-img2 {
-        width: 70%;
-        align-items: center;
-        grid-area: main-img2;
-        margin: 1rem; }
-      cuerpo main .main-img3 {
-        width: 70%;
-        align-items: center;
-        grid-area: main-img3;
-        margin: 1rem; }
-      cuerpo main .main-img4 {
-        width: 100%;
-        align-items: center;
-        grid-area: main-img4;
-        margin: 1rem; }
-    cuerpo footer {
-      color: aliceblue;
-      background-color: #d655ce;
-      padding: 1rem;
-      text-align: right;
-      font-weight: bold; }
-  
 /*Página conoceme - parte de main */
 main {
-  color: #dac4ab; }
+ background-color:  #dac4ab; }
   main .titulo-me {
     display: flex;
     justify-content: center;
@@ -150,3 +72,79 @@ main {
     padding: 30px;
     text-align: center; }
 
+/*Propiedades de la página index.html y en general*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+cuerpo {
+  background-color: whitesmoke;
+  /*css del main con Grid */ }
+  cuerpo header div h1 div {
+    color: #310731;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 4rem; }
+  cuerpo header .fondo-nav {
+    background-color: #0a0e0b; }
+  cuerpo header a:link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold; }
+  cuerpo header a:visited {
+    color: black;
+    margin: 0rem;
+    padding: 0.5rem; }
+  cuerpo main {
+    background-color: #dac4ab;
+    /*animación*/ }
+    cuerpo main .titulo-main {
+      font-size: 2rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+      font-style: normal;
+      grid-area: titulo-main; }
+    cuerpo main .titulo-main:hover {
+      color: #640b7a;
+      font-weight: bold; }
+    cuerpo main .parrafos-main {
+      margin: 1.5rem;
+      display: grid;
+      grid-template-areas: "parrafo-uno-main parrafo-dos-main";
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.3rem; }
+    cuerpo main .img-index {
+      display: grid;
+      grid-template-areas: "main-img1 main-img2"
+ "main-img3 main-img4";
+      margin: 1rem;
+      justify-content: center;
+      align-items: center; }
+    cuerpo main .main-img1 {
+      width: 70%;
+      align-items: center;
+      grid-area: main-img1;
+      margin: 1rem; }
+    cuerpo main .main-img2 {
+      width: 70%;
+      align-items: center;
+      grid-area: main-img2;
+      margin: 1rem; }
+    cuerpo main .main-img3 {
+      width: 70%;
+      align-items: center;
+      grid-area: main-img3;
+      margin: 1rem; }
+    cuerpo main .main-img4 {
+      width: 100%;
+      align-items: center;
+      grid-area: main-img4;
+      margin: 1rem; }
+  cuerpo footer {
+    color: aliceblue;
+    background-color: #d655ce;
+    padding: 1rem;
+    text-align: right;
+    font-weight: bold; }

@@ -1,7 +1,7 @@
 /*Página conoceme - parte de main */
 
 main{
-    color: $color-secundario;
+    background-color: $color-secundario;
     .titulo-me{
         display: flex;
         justify-content: center;
@@ -23,7 +23,7 @@ main{
         margin: 2rem;
         padding: 2rem;
         text-decoration: none;
-        color: pink;
+        color: violet;
         font-family:cursive;
     }
     a img {
