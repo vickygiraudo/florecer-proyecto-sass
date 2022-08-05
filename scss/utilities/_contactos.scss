@@ -3,8 +3,7 @@
 main{
     background-color: $color-secundario;
     form legend {
-        display: flex;
-        justify-content: center;
+        @include flex;
         color:rgb(27, 6, 6);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 3rem;
@@ -24,12 +23,10 @@ main{
     }
     
     .botones{
-        padding: 1rem;
-        margin: 1rem;
+        @extend %botones
     }
     
     .botones2{
-        padding: 1rem;
-        margin: 1rem;
+       @extend %botones
     }
 }

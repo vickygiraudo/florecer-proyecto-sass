@@ -9,8 +9,10 @@ $color-footer: #d655ce;
 @import "utilities/conoceme";
 @import "utilities/contactos";
 @import "utilities/comunidad";
-@import "utilities/index";
 @import "utilities/productos";
+@import "utilities/mixin";
+@import "utilities/maps";
+@import "utilities/extend";
 
 
 *{
@@ -20,7 +22,7 @@ $color-footer: #d655ce;
 }
 
 cuerpo{
-    background-color: whitesmoke
+    background-color: whitesmoke;
     header{
         div h1 div {
             color: rgb(49, 7, 49);
@@ -102,16 +104,17 @@ cuerpo{
     }
 
     footer{
-        color: aliceblue;
+        standar{
+            color: map-get($map: $footer-standar, $key: $color-footer );
+        }
         background-color: $color-footer;
         padding: 1rem;
         text-align: right;
         font-weight: bold;
     }
 
-    /* Media Queris - Mobile First */
-
-@media (min-width:768px) and (max-width:1200px) {
+   /* Media Queris - Mobile First */
+    @media (min-width:768px) and (max-width:1200px) {
 
     main{
     color: rgb(55, 44, 44);
@@ -158,39 +161,37 @@ cuerpo{
         grid-area: main-img4;   
         width: 80%;
     }
-    
 }
 
-/* Media Queris - Pantalla min-width:1024px */
+  /* Media Queris - Pantalla min-width:1024px */
 
-@media screen and (min-width:1200px){
-main{
-    .img-index{
+   @media screen and (min-width:1200px){
+      main{
+      .img-index{
         display: flex;
         justify-content: space-around;
 
-    }
+        }
 
-    .main-img1{
-      grid-area: main-img1;
-      width: 15%;
-       
-    }
-    
-    .main-img2{
-        grid-area: main-img2;
+      .main-img1{
+        grid-area: main-img1;
         width: 15%;
+       
+        }
     
+      .main-img2{
+        grid-area: main-img2;
+        width: 15%;        
     }
     
-    .main-img3{
+     .main-img3{
         grid-area: main-img3;
         width: 15%;
-    }
+      }
     
-    .main-img4 {
+      .main-img4 {
         grid-area: main-img4;
         width: 25%;
+      }
     }
-    
-    
+}      
